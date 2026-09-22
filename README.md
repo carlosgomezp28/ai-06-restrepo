@@ -1,103 +1,159 @@
-# Repository 1 — Aouad, Lykouris & Zhong (2026)
+# Repository 6 — Acemoglu & Restrepo (2018)
 
-*Human-AI Productivity Paradoxes: Modeling the Interplay of Skill, Effort, and AI Assistance*
-[arXiv:2605.11350](https://arxiv.org/abs/2605.11350) · [cs.GT]
+**Paper:** Daron Acemoglu and Pascual Restrepo, *The Race between Man and Machine: Implications of Technology for Growth, Factor Shares, and Employment*.
 
-> **This is the worked example** for *Artificial Intelligence and Economic
-> Modeling* (UP 2026-II). It shows what a weekly repository looks like when it is
-> done well. Yours does not have to be this long — see "What is required" below.
+**Version read:** NBER Working Paper 22252, revised June 2017, 87 pages.
 
----
+Repository: https://github.com/carlosgomezp28/ai-06-restrepo
 
-## What question the paper answers
+## Research question
 
-When does AI assistance make a worker **less** productive?
+How does technological change affect output, wages, employment, and factor shares when technology changes not only factor productivity but also which tasks are performed by capital and which are performed by labor?
 
-The paper picks one mechanism and pushes it: AI is a **perfectly substitutable
-input**. Skill $s$, effort $e$ and assistance $a$ enter production only through
-their sum, $x = s + e + a$. Nothing else is going on — no learning, no
-complementarity, no contracting. Everything that follows comes from that single
-modelling choice plus a linear cost of effort.
+The paper's central distinction is between:
 
-## The agent's problem
+- **automation**, which expands the set of existing tasks that capital can perform and creates a displacement effect on labor; and
+- **new tasks**, which create activities in which labor has comparative advantage and generate a reinstatement effect.
 
-$$\max_{e \ge 0}\; p(s+e+a) - \gamma e$$
+Unlike the previous papers in the course, the relevant unit of analysis is the aggregate economy rather than an individual human or AI agent.
 
-with $p$ weakly increasing, concave and twice differentiable, $\gamma > 0$, and
-one constraint that turns out to carry the whole result: $e \ge 0$.
+## Economic problem and task allocation
 
-## The main result, with all its conditions
+Final output combines a unit measure of tasks indexed by
 
-Let $x^{*}$ be the **largest** maximiser of $p(x) - \gamma x$:
+$$
+i\in[N-1,N].
+$$
 
-$$x^{*} = \max \arg\max_{x} \left[\, p(x) - \gamma x \,\right]$$
+Labor productivity in task \(i\) is \(\gamma(i)\). Assumption 1 requires \(\gamma(i)\) to be strictly increasing, so labor has comparative advantage in higher-index tasks.
 
-This requires a **regularity condition**, without which $x^{*}$ need not exist:
+The automation technology is summarized by \(I\in[N-1,N]\). Tasks with
 
-$$\limsup_{x \to \infty} \frac{p(x)}{x} < \gamma$$
+$$
+i\le I
+$$
 
-**Proposition 2.1.** Under those conditions,
+can technologically be produced by either capital or labor, whereas tasks with \(i>I\) must be produced by labor.
 
-$$e^{*}(s,a) = \left(x^{*} - s - a\right)_{+}, \qquad
-  p^{*}(s,a) = \max\left\{ p(x^{*}),\, p(s+a) \right\}$$
+Competitive firms compare the rental rate of capital \(R\) with the effective labor cost \(W/\gamma(i)\). Define the cost threshold \(\tilde I\) by
 
-*Intuition in one sentence:* the agent has a single target level of total input,
-tops it up with effort, and once skill plus AI already reach it he stops working.
+$$
+\frac{W}{R}=\gamma(\tilde I).
+$$
 
-Two things worth noticing about the proof. It is a **case split** — interior
-versus corner — and contains **no differentiation at all**; and the largest-argmax
-tie-break is not decoration, it is what makes $e^{*}$ well defined when
-$p(x)-\gamma x$ has a flat maximum.
+The equilibrium automation threshold is therefore
 
-## Sections 3–5: stated, not derived
+$$
+I^*=\min\{I,\tilde I\}.
+$$
 
-The three headline results — the deskilling paradox, the unreliability paradox
-and skill polarisation — use machinery well beyond Section 2: a continuous-time
-birth–death Markov chain and its steady state, Arrow–Pratt risk aversion applied
-to a *production* function with IARA/DARA driving the sign, and Bayesian updating
-over a binary signal. They are worth understanding; they are not worth trying to
-reproduce in a week. See `extra/tutorial-alz-completo.pdf` for the full walk.
+Hence capital performs all tasks \(i\le I^*\), while labor performs all tasks \(i>I^*\).
 
----
+The static analysis also imposes:
 
-## What is in this repository
+1. **Assumption 1:** \(\gamma(i)\) is strictly increasing.
+2. **Assumption 2:** either \(\eta\to0\) or \(\zeta=1\), which gives homothetic factor demands in the baseline exposition.
+3. **Assumption 3:** \(K<\bar K\), where \(\bar K\) is defined by \(R=W/\gamma(N)\). This implies \(R>W/\gamma(N)\), so newly created tasks raise output and are immediately adopted.
 
-| File | What it is |
-|---|---|
-| `README.md` | This page |
-| `prompts.md` | The full LLM conversation, unedited |
-| `extensions.md` | Which assumptions could be relaxed, and which are dead ends |
-| `hand/` | The derivation of Proposition 2.1, written out by hand |
-| `presentation.tex` / `.pdf` | The 5-minute Beamer deck |
-| `paper/` | The article itself |
-| `extra/` | Above the floor: a full tutorial of the paper and two lecture decks |
+Under Assumptions 1–3, the static equilibrium exists and is unique.
 
-## What is required
+## Automation versus new tasks
 
-Only four things. The rest of this repository is above the floor.
+When the economy is **technology constrained**,
 
-1. **`README.md`** — one page: the question, the agent's problem, the main result
-   **with all its conditions**.
-2. **`prompts.md`** — your prompts and the answers, **raw**. Do not tidy them up:
-   the value is in seeing where the model went wrong.
-3. **`hand/`** — at least one photograph of something you derived by hand. Not the
-   whole paper: the one step you did not believe until you did it yourself.
-4. **`presentation.tex` / `.pdf`** — the 5-minute deck, source and compiled.
+$$
+I^*=I<\tilde I,
+$$
 
-Deadline is **Thursday 22:00**, work merged into `main` through a pull request,
-and the repository URL posted as a comment on that week's issue.
+an increase in \(I\) expands the range of tasks performed by capital. Proposition 2 implies
 
-## About `hand/`
+$$
+\frac{d\ln(W/R)}{dI}
+=
+-\frac{\Lambda_I}{\hat\sigma+\varepsilon_L}
+<0.
+$$
 
-`hand/prop-2-1-derivacion-a-mano.pdf` is three phone photos of a notebook page.
-That is exactly the standard: crooked, with crossings-out, no transcription. What
-it shows is the first-order condition and the interior-versus-corner split written
-out step by step — the part I did not want to take on trust.
+Thus automation reduces the wage-rental ratio. In this regime it also reduces the labor share and employment.
 
-## About the LLM conversation
+By contrast, an increase in \(N\), which represents the creation of new labor-intensive tasks, raises \(W/R\), the labor share, and employment.
 
-`prompts.md` is the export of the session that produced the tutorial in `extra/`.
-Read it for what it gets wrong as much as for what it gets right. The episode
-worth studying is on slide 4 of the presentation: asked for "the most natural
-extension", the model confidently proposed relaxing the linear cost — which the
-authors had already done in Appendix D. It took opening the appendix to find out.
+If instead
+
+$$
+I^*=\tilde I<I,
+$$
+
+firms are not constrained by the available automation technology. Marginal increases in \(I\) then have no effect on equilibrium factor prices because the additional technically automatable tasks would not yet be cost-minimizing to automate.
+
+## Main result: automation does not necessarily reduce wages
+
+Proposition 3 assumes Assumptions 1–3.
+
+In the technology-constrained regime \(I^*=I<\tilde I\), automation raises productivity because capital replaces labor in tasks where capital is cheaper. But it simultaneously displaces labor into a smaller set of remaining tasks.
+
+The wage change can be decomposed as
+
+$$
+d\ln W
+=
+d\ln Y\big|_{K,L}
++
+(1-s_L)
+\left(
+\frac{\Lambda_N\,dN-\Lambda_I\,dI}
+{\hat\sigma+\varepsilon_L}
+\right).
+$$
+
+For an automation shock alone, \(dI>0\) and \(dN=0\):
+
+- \(d\ln Y|_{K,L}>0\): the **productivity effect** raises labor demand in tasks not automated;
+- the term involving \(-\Lambda_I dI\) is the **displacement effect**, which pushes wages down because workers are concentrated into fewer tasks.
+
+Therefore automation does **not** necessarily reduce the equilibrium wage.
+
+There exists a finite threshold \(\tilde K\) such that
+
+$$
+K>\tilde K
+\quad\Longrightarrow\quad
+\frac{dW}{dI}>0,
+$$
+
+while
+
+$$
+K<\tilde K
+\quad\Longrightarrow\quad
+\frac{dW}{dI}<0.
+$$
+
+When capital is sufficiently abundant, the productivity gains from substituting cheaper capital for labor dominate the displacement effect. When capital is sufficiently scarce, the cost saving from automation is small and displacement dominates.
+
+Importantly, even when automation raises the wage, in the technology-constrained regime it still reduces \(W/R\), the labor share, and employment. A higher wage is therefore not equivalent to labor receiving a larger share of aggregate income.
+
+## Displacement and reinstatement
+
+The paper's broader mechanism is a race between two types of technological change:
+
+- **Displacement:** automation moves tasks from labor to capital.
+- **Reinstatement:** the creation of new tasks moves the frontier of production toward activities in which labor has comparative advantage.
+
+New tasks increase productivity and, under Assumption 3, always increase the equilibrium wage. They also raise the labor share and employment, counteracting the displacement generated by automation.
+
+## Lean formalization
+
+The AppliedModelingLib run uses the NBER Working Paper 22252 version revised in June 2017 and the paper folder `AR18RaceManMachine`.
+
+The final required command
+
+`python3 scripts/paper_contribution.py check AR18RaceManMachine --fast`
+
+completed successfully:
+
+`Build completed successfully (832 jobs).`
+
+`exit_code=0`
+
+The formalization captures selected static comparative-statics quantities, the productivity/displacement wage decomposition, balanced-growth crossing conditions, and welfare decompositions. It does not reconstruct the entire continuum task economy or all of the paper's dynamic differential system; those analytic bridges remain explicit formalization boundaries documented in `lean/`.
