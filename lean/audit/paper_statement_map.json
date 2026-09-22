@@ -1,0 +1,273 @@
+{
+  "paper": "AR18RaceManMachine",
+  "source_artifact_path": "source.txt",
+  "source_artifact_sha256": "9540e49033317456abbfff6712c1843ce0d455b4b1f763240b1ff89fb18dd947",
+  "source_coverage_mode": "named_theoretical_statements",
+  "declared_scope_exclusions": [
+    "The empirical supplement at source.txt:3401-3798 is outside named-theory scope.",
+    "Figures, numerical illustrations, proof-only headings, and conclusion research directions are deep-audit material rather than independent named theorem targets.",
+    "The present Lean development is explicitly partial: only the listed algebraic and scalar-crossing components have proof endpoints."
+  ],
+  "items": {
+    "assumption1": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:376-381",
+      "statement": "Assumption 1: the comparative-advantage schedule gamma is strictly increasing.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption2": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:405-410",
+      "statement": "Assumption 2 imposes the homothetic-demand parameter restriction eta tending to zero or zeta equal to one.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption3": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:498-516",
+      "statement": "Assumption 3 bounds the fixed capital stock so newly created tasks are immediately adopted.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption1_prime": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:1044-1051",
+      "statement": "Assumption 1-prime sets gamma(i) = exp(A i) with A positive.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption4": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:1622-1628",
+      "statement": "Assumption 4 requires sigma-hat greater than zeta.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption1_double_prime": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:1958-1984",
+      "statement": "Assumption 1-double-prime specifies the heterogeneous-skill productivity and standardization schedules.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption2_prime": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:2367-2381",
+      "statement": "Assumption 2-prime gives the Appendix A regularity restriction for the general model.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "assumption2_double_prime": {
+      "source_kind": "assumption",
+      "source_location": "source.txt:7621-7626",
+      "statement": "Assumption 2-double-prime gives the regularity restriction when new tasks also use capital.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition1": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:613-643",
+      "statement": "Proposition 1 characterizes existence, uniqueness, and threshold allocation in the static equilibrium.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "corollary1": {
+      "source_kind": "corollary",
+      "source_location": "source.txt:686-715",
+      "statement": "Corollary 1 gives the Cobb-Douglas output formula with capital exponent 1-N+I* and labor exponent N-I*.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.corollary1_task_share_accountingSpec"
+      ]
+    },
+    "proposition2": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:718-819",
+      "statement": "Proposition 2 states the static comparative-statics formulas and signs for automation, new tasks, capital, labor share, and employment.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.proposition2_constrained_signsSpec",
+        "AR18RaceManMachine.proposition2_technology_free_elasticitySpec"
+      ]
+    },
+    "proposition3": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:848-958",
+      "statement": "Proposition 3 decomposes technology's effects on productivity, wages, and the rental rate.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.proposition3_productivity_factor_price_coreSpec"
+      ]
+    },
+    "proposition4": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:1267-1292",
+      "statement": "Proposition 4 characterizes balanced growth with exogenous technological change and its stability regimes.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition5": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:1343-1351",
+      "statement": "Proposition 5 states the long-run comparative statics of effective wages, employment, labor share, and capital.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.proposition5_effective_wage_direction_coreSpec"
+      ]
+    },
+    "proposition6": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:1743-1765",
+      "statement": "Proposition 6 characterizes full-automation, interior, multiple, and no-automation balanced-growth equilibria under endogenous technology.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.proposition6_unique_interior_crossing_coreSpec"
+      ]
+    },
+    "corollary2": {
+      "source_kind": "corollary",
+      "source_location": "source.txt:1845-1854",
+      "statement": "Corollary 2 says a permanent rise in relative automation productivity lowers n, employment, and labor share on the BGP.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.corollary2_automation_productivity_shift_coreSpec"
+      ]
+    },
+    "proposition7": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:1993-2008",
+      "statement": "Proposition 7 gives the heterogeneous-skill wage and inequality effects of automation and new tasks.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition8": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:2107-2116",
+      "statement": "Proposition 8 characterizes balanced growth with creative destruction and rules out an interior BGP under constant creative-destruction intensity.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.proposition8_no_stable_crossing_coreSpec"
+      ]
+    },
+    "proposition9": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:2181-2268",
+      "statement": "Proposition 9 gives welfare derivatives for automation and new tasks with and without a binding quasi-labor-supply friction.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.proposition9_welfare_sign_coreSpec"
+      ]
+    },
+    "lemma_a1": {
+      "source_kind": "lemma",
+      "source_location": "source.txt:2634-2640",
+      "statement": "Lemma A1 establishes monotonicity of the general-model relative-demand function in the automation threshold and new tasks.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.lemmaA1_affine_relative_demand_coreSpec"
+      ]
+    },
+    "lemma_a2": {
+      "source_kind": "lemma",
+      "source_location": "source.txt:2726-2746",
+      "statement": "Lemma A2 derives the factor-price regimes shown in Figure 4.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "lemma_a3": {
+      "source_kind": "lemma",
+      "source_location": "source.txt:3162-3182",
+      "statement": "Lemma A3 gives the asymptotic normalized innovation-value functions.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition_b1": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:5267-5387",
+      "statement": "Proposition B1 gives comparative statics for the general unit-cost model.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "lemma_b1": {
+      "source_kind": "lemma",
+      "source_location": "source.txt:5766-5777",
+      "statement": "Lemma B1 establishes the Inada conditions for the net-output function.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition_b2": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:7127-7190",
+      "statement": "Proposition B2 gives the general-model welfare implications of automation and new tasks.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition_b3": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:7627-7675",
+      "statement": "Proposition B3 characterizes the static equilibrium when new tasks also use capital.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "proposition_b4": {
+      "source_kind": "proposition",
+      "source_location": "source.txt:7681-7697",
+      "statement": "Proposition B4 characterizes endogenous-technology balanced growth when new tasks also use capital.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "static_equilibrium_definition": {
+      "source_kind": "definition",
+      "source_location": "source.txt:563-611",
+      "statement": "The source defines a static equilibrium by household optimization, factor allocation, market clearing, and the price index.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "dynamic_equilibrium_bgp_definition": {
+      "source_kind": "definition",
+      "source_location": "source.txt:1185-1228",
+      "statement": "The source defines dynamic equilibrium and a balanced growth path.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "effective_wage_definition": {
+      "source_kind": "definition",
+      "source_location": "source.txt:1337-1342",
+      "statement": "The source defines effective wages w_I(n) and w_N(n) at the automation and new-task margins.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "endogenous_technology_bgp_definition": {
+      "source_kind": "definition",
+      "source_location": "source.txt:1729-1741",
+      "statement": "The source defines normalized innovation values and the interior-BGP equality kappa_I v_I(n) = kappa_N v_N(n).",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "AR18RaceManMachine.innovationValueGap",
+        "AR18RaceManMachine.IsInteriorBGPCrossing"
+      ]
+    },
+    "welfare_friction_definition": {
+      "source_kind": "definition",
+      "source_location": "source.txt:2152-2184",
+      "statement": "The source introduces welfare and the upward-sloping quasi-labor-supply constraint.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "general_unit_cost_model": {
+      "source_kind": "model",
+      "source_location": "source.txt:2365-2564",
+      "statement": "Appendix A presents the general unit-cost model and equilibrium equations A1-A4.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    },
+    "alternative_new_tasks_use_capital_model": {
+      "source_kind": "model",
+      "source_location": "source.txt:7522-7626",
+      "statement": "Appendix B presents the alternative model in which new tasks also use capital.",
+      "claim_bearing": true,
+      "lean_declarations": []
+    }
+  }
+}
