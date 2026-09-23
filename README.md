@@ -21,31 +21,31 @@ Unlike the previous papers in the course, the relevant unit of analysis is the a
 
 Final output combines a unit measure of tasks indexed by
 
-$$
+```math
 i\in[N-1,N].
-$$
+```
 
 Labor productivity in task $i$ is $\gamma(i)$. Assumption 1 requires $\gamma(i)$ to be strictly increasing, so labor has comparative advantage in higher-index tasks.
 
 The automation technology is summarized by $I\in[N-1,N]$. Tasks with
 
-$$
+```math
 i\le I
-$$
+```
 
 can technologically be produced by either capital or labor, whereas tasks with $i>I$ must be produced by labor.
 
 Competitive firms compare the rental rate of capital $R$ with the effective labor cost $W/\gamma(i)$. Define the cost threshold $\tilde I$ by
 
-$$
+```math
 \frac{W}{R}=\gamma(\tilde I).
-$$
+```
 
 The equilibrium automation threshold is therefore
 
-$$
+```math
 I^{\ast}=\min\{I,\tilde I\}.
-$$
+```
 
 Hence capital performs all tasks $i\le I^{\ast}$, while labor performs all tasks $i>I^{\ast}$.
 
@@ -61,18 +61,18 @@ Under Assumptions 1–3, the static equilibrium exists and is unique.
 
 When the economy is **technology constrained**,
 
-$$
+```math
 I^{\ast}=I<\tilde I,
-$$
+```
 
 an increase in $I$ expands the range of tasks performed by capital. Proposition 2 implies
 
-$$
+```math
 \frac{d\ln(W/R)}{dI}
 =
 -\frac{\Lambda_I}{\hat\sigma+\varepsilon_L}
 <0.
-$$
+```
 
 Thus automation reduces the wage-rental ratio. In this regime it also reduces the labor share and employment.
 
@@ -80,9 +80,9 @@ By contrast, an increase in $N$, which represents the creation of new labor-inte
 
 If instead
 
-$$
+```math
 I^{\ast}=\tilde I<I,
-$$
+```
 
 firms are not constrained by the available automation technology. Marginal increases in $I$ then have no effect on equilibrium factor prices because the additional technically automatable tasks would not yet be cost-minimizing to automate.
 
@@ -94,7 +94,7 @@ In the technology-constrained regime $I^{\ast}=I<\tilde I$, automation raises pr
 
 The wage change can be decomposed as
 
-$$
+```math
 d\ln W
 =
 d\ln Y\big|_{K,L}
@@ -104,7 +104,7 @@ d\ln Y\big|_{K,L}
 \frac{\Lambda_N\,dN-\Lambda_I\,dI}
 {\hat\sigma+\varepsilon_L}
 \right).
-$$
+```
 
 For an automation shock alone, $dI>0$ and $dN=0$:
 
@@ -115,19 +115,19 @@ Therefore automation does **not** necessarily reduce the equilibrium wage.
 
 There exists a finite threshold $\tilde K$ such that
 
-$$
+```math
 K>\tilde K
 \quad\Longrightarrow\quad
 \frac{dW}{dI}>0,
-$$
+```
 
 while
 
-$$
+```math
 K<\tilde K
 \quad\Longrightarrow\quad
 \frac{dW}{dI}<0.
-$$
+```
 
 When capital is sufficiently abundant, the productivity gains from substituting cheaper capital for labor dominate the displacement effect. When capital is sufficiently scarce, the cost saving from automation is small and displacement dominates.
 
