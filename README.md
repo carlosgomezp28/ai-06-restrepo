@@ -25,17 +25,17 @@ $$
 i\in[N-1,N].
 $$
 
-Labor productivity in task \(i\) is \(\gamma(i)\). Assumption 1 requires \(\gamma(i)\) to be strictly increasing, so labor has comparative advantage in higher-index tasks.
+Labor productivity in task $i$ is $\gamma(i)$. Assumption 1 requires $\gamma(i)$ to be strictly increasing, so labor has comparative advantage in higher-index tasks.
 
-The automation technology is summarized by \(I\in[N-1,N]\). Tasks with
+The automation technology is summarized by $I\in[N-1,N]$. Tasks with
 
 $$
 i\le I
 $$
 
-can technologically be produced by either capital or labor, whereas tasks with \(i>I\) must be produced by labor.
+can technologically be produced by either capital or labor, whereas tasks with $i>I$ must be produced by labor.
 
-Competitive firms compare the rental rate of capital \(R\) with the effective labor cost \(W/\gamma(i)\). Define the cost threshold \(\tilde I\) by
+Competitive firms compare the rental rate of capital $R$ with the effective labor cost $W/\gamma(i)$. Define the cost threshold $\tilde I$ by
 
 $$
 \frac{W}{R}=\gamma(\tilde I).
@@ -44,16 +44,16 @@ $$
 The equilibrium automation threshold is therefore
 
 $$
-I^*=\min\{I,\tilde I\}.
+I^{\ast}=\min\{I,\tilde I\}.
 $$
 
-Hence capital performs all tasks \(i\le I^*\), while labor performs all tasks \(i>I^*\).
+Hence capital performs all tasks $i\le I^{\ast}$, while labor performs all tasks $i>I^{\ast}$.
 
 The static analysis also imposes:
 
-1. **Assumption 1:** \(\gamma(i)\) is strictly increasing.
-2. **Assumption 2:** either \(\eta\to0\) or \(\zeta=1\), which gives homothetic factor demands in the baseline exposition.
-3. **Assumption 3:** \(K<\bar K\), where \(\bar K\) is defined by \(R=W/\gamma(N)\). This implies \(R>W/\gamma(N)\), so newly created tasks raise output and are immediately adopted.
+1. **Assumption 1:** $\gamma(i)$ is strictly increasing.
+2. **Assumption 2:** either $\eta\to0$ or $\zeta=1$, which gives homothetic factor demands in the baseline exposition.
+3. **Assumption 3:** $K<\bar K$, where $\bar K$ is defined by $R=W/\gamma(N)$. This implies $R>W/\gamma(N)$, so newly created tasks raise output and are immediately adopted.
 
 Under Assumptions 1–3, the static equilibrium exists and is unique.
 
@@ -62,10 +62,10 @@ Under Assumptions 1–3, the static equilibrium exists and is unique.
 When the economy is **technology constrained**,
 
 $$
-I^*=I<\tilde I,
+I^{\ast}=I<\tilde I,
 $$
 
-an increase in \(I\) expands the range of tasks performed by capital. Proposition 2 implies
+an increase in $I$ expands the range of tasks performed by capital. Proposition 2 implies
 
 $$
 \frac{d\ln(W/R)}{dI}
@@ -76,21 +76,21 @@ $$
 
 Thus automation reduces the wage-rental ratio. In this regime it also reduces the labor share and employment.
 
-By contrast, an increase in \(N\), which represents the creation of new labor-intensive tasks, raises \(W/R\), the labor share, and employment.
+By contrast, an increase in $N$, which represents the creation of new labor-intensive tasks, raises $W/R$, the labor share, and employment.
 
 If instead
 
 $$
-I^*=\tilde I<I,
+I^{\ast}=\tilde I<I,
 $$
 
-firms are not constrained by the available automation technology. Marginal increases in \(I\) then have no effect on equilibrium factor prices because the additional technically automatable tasks would not yet be cost-minimizing to automate.
+firms are not constrained by the available automation technology. Marginal increases in $I$ then have no effect on equilibrium factor prices because the additional technically automatable tasks would not yet be cost-minimizing to automate.
 
 ## Main result: automation does not necessarily reduce wages
 
 Proposition 3 assumes Assumptions 1–3.
 
-In the technology-constrained regime \(I^*=I<\tilde I\), automation raises productivity because capital replaces labor in tasks where capital is cheaper. But it simultaneously displaces labor into a smaller set of remaining tasks.
+In the technology-constrained regime $I^{\ast}=I<\tilde I$, automation raises productivity because capital replaces labor in tasks where capital is cheaper. But it simultaneously displaces labor into a smaller set of remaining tasks.
 
 The wage change can be decomposed as
 
@@ -106,14 +106,14 @@ d\ln Y\big|_{K,L}
 \right).
 $$
 
-For an automation shock alone, \(dI>0\) and \(dN=0\):
+For an automation shock alone, $dI>0$ and $dN=0$:
 
-- \(d\ln Y|_{K,L}>0\): the **productivity effect** raises labor demand in tasks not automated;
-- the term involving \(-\Lambda_I dI\) is the **displacement effect**, which pushes wages down because workers are concentrated into fewer tasks.
+- $d\ln Y|_{K,L}>0$: the **productivity effect** raises labor demand in tasks not automated;
+- the term involving $-\Lambda_I dI$ is the **displacement effect**, which pushes wages down because workers are concentrated into fewer tasks.
 
 Therefore automation does **not** necessarily reduce the equilibrium wage.
 
-There exists a finite threshold \(\tilde K\) such that
+There exists a finite threshold $\tilde K$ such that
 
 $$
 K>\tilde K
@@ -131,7 +131,7 @@ $$
 
 When capital is sufficiently abundant, the productivity gains from substituting cheaper capital for labor dominate the displacement effect. When capital is sufficiently scarce, the cost saving from automation is small and displacement dominates.
 
-Importantly, even when automation raises the wage, in the technology-constrained regime it still reduces \(W/R\), the labor share, and employment. A higher wage is therefore not equivalent to labor receiving a larger share of aggregate income.
+Importantly, even when automation raises the wage, in the technology-constrained regime it still reduces $W/R$, the labor share, and employment. A higher wage is therefore not equivalent to labor receiving a larger share of aggregate income.
 
 ## Displacement and reinstatement
 
